@@ -7,12 +7,12 @@ import 'firebase_options.dart';
 
 import 'package:flutter_messenger_app/screens/auth.dart';
 
-void main() {
+void main() async {
   // This line makes sure everything is set up before the app starts
   WidgetsFlutterBinding.ensureInitialized();
   
   // Start the app and set up Firebase at the same time
-  initializeFirebase();
+  await initializeFirebase();
   runApp(const App());
 }
 
